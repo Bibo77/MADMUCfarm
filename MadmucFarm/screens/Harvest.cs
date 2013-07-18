@@ -5,7 +5,6 @@ using MonoTouch.Foundation;
 using MonoTouch.UIKit;
 using MonoTouch.Dialog;
 using SQLite;
-using System.IO;
 using ElementPack;
 
 namespace MadmucFarm

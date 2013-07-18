@@ -4,7 +4,6 @@ using System.Linq;
 using MonoTouch.Foundation;
 using MonoTouch.UIKit;
 using MonoTouch.Dialog;
-using System.IO;
 using SQLite;
 using ElementPack;
 

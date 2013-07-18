@@ -24,6 +24,7 @@ namespace MadmucFarm
 
 			notes = new SimpleMultilineEntryElement (null, null); 
 
+			notes.Editable = true; 
 
 			this.Title = "Soil Test"; 
 			this.Pushing = true; 
@@ -72,7 +73,7 @@ namespace MadmucFarm
 				where x.DbField == this.fieldID
 					select x;
 
-			if (q.Count () == 0) {
+			if (q.Count () != 0) {
 				new UIAlertView ("Previous Data Loaded", " ", null, "OK", null).Show ();
 
 				//use the most recent data
