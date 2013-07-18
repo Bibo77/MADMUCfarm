@@ -94,6 +94,8 @@
     <Folder Include="screens\" />
     <Folder Include="Resources\img\" />
     <Folder Include="table\" />
+    <Folder Include="Libs\" />
+    <Folder Include="LocalStorage\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -104,8 +106,6 @@
     <Compile Include="screens\Login.cs" />
     <Compile Include="screens\Selection.cs" />
     <Compile Include="screens\SelectFarm.cs" />
-    <Compile Include="DBConnection.cs" />
-    <Compile Include="SQLite.cs" />
     <Compile Include="screens\SelectField.cs" />
     <Compile Include="table\Farm.cs" />
     <Compile Include="table\Field.cs" />
@@ -113,7 +113,15 @@
     <Compile Include="screens\SelectBin.cs" />
     <Compile Include="table\Bin.cs" />
     <Compile Include="screens\ModifyBin.cs" />
-    <Compile Include="SimpleMultilineEntryElement.cs" />
+    <Compile Include="Libs\FloatElementEx.cs" />
+    <Compile Include="table\SeedDB.cs" />
+    <Compile Include="table\ChemicalDB.cs" />
+    <Compile Include="Libs\SQLite.cs" />
+    <Compile Include="Libs\SimpleMultilineEntryElement.cs" />
+    <Compile Include="screens\Chemical.cs" />
+    <Compile Include="screens\Seed.cs" />
+    <Compile Include="LocalStorage\LocalStorage.cs" />
+    <Compile Include="LocalStorage\DBConnection.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>

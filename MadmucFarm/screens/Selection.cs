@@ -5,6 +5,7 @@ using MonoTouch.Foundation;
 using MonoTouch.UIKit;
 using MonoTouch.Dialog;
 using ElementPack;
+using UsaskFarm;
 
 namespace MadmucFarm
 {
@@ -13,7 +14,7 @@ namespace MadmucFarm
 		public Selection (String farmName,String fieldName,int fieldID) : base (UITableViewStyle.Grouped, null)
 		{
 			this.Pushing = true;
-
+			LocalStorage.getLocalStorageManager ().createTable ();
 			Root = new RootElement (farmName+"  "+fieldName) {};
 
 			var section0 = new Section ("Field Info:") { };
@@ -49,9 +50,12 @@ namespace MadmucFarm
 			var section = new Section ("choose the action you want to do") { };
 			var seed=new StringElement("Seed",()=>{
 				//add code here Wen
+
+				this.NavigationController.PushViewController(new Seed(fieldID),true);
 			});
 			var chemical=new StringElement("Chemical",()=>{
 				//add code here Wen
+				this.NavigationController.PushViewController(new Chemical(fieldID),true);
 			});
 			var harvest=new StringElement("Harvest",()=>{
 				//add code here khaled
@@ -62,6 +66,8 @@ namespace MadmucFarm
 			var soilTest=new StringElement("Soil Test",()=>{
 				//add code here khaled
 			});
+
+
 			section.Add (seed);
 			section.Add(chemical);
 			section.Add(harvest);
