@@ -1,1 +1,1 @@
---aot=mtriple=armv7-darwin,full,static,asmonly,direct-icalls,nodebug,outfile=/System.Json.dll.armv7.s "/Users/khaledhaggag/Projects/MadmucFarm/MadmucFarm/bin/iPhone/Release/MadmucFarm.app/System.Json.dll"
+--aot=mtriple=armv7-darwin,full,static,asmonly,direct-icalls,nodebug,outfile=/System.Json.dll.armv7.s "/Users/terence/Desktop/projects/MADMUCfarm/MadmucFarm/bin/iPhone/Release/MadmucFarm.app/System.Json.dll"
