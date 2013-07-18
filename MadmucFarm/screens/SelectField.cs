@@ -59,13 +59,15 @@ namespace MadmucFarm
 
 			var section = new Section () {};
 			var rainGuage=new EntryElement ("Rain Guage","enter rain guage",DBConnection.getRain(farmID).ToString());
-			var update=new StringElement("Save rain guage",()=>{
+			var update=new StringElement("Save",()=>{
 				try{
 				DBConnection.updateRain(farmID,Int32.Parse(rainGuage.Value));
 				}
 				catch(Exception e){
 					new UIAlertView ("Error", "Wrong input format!", null, "Continue").Show (); 
+					return;
 				}
+				new UIAlertView ("Success", "Data has been saved", null, "Continue").Show (); 
 			});
 			section.Add (rainGuage);
 			section.Add (update);

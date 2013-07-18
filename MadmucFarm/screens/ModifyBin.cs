@@ -43,19 +43,23 @@ namespace MadmucFarm
 				}
 				catch(Exception e){
 					new UIAlertView ("Error", "Wrong input format for bin size!", null, "Continue").Show ();
+					return;
 				}
 				try{
 					DBConnection.updateBinBushel(binNum,Int32.Parse(bushelElem.Value));
 				}
 				catch(Exception e){
 					new UIAlertView ("Error", "Wrong input format for bushel!", null, "Continue").Show ();
+					return;
 				}
 				try{
 					DBConnection.updateBinCrop(binNum,cropElem.Value);
 				}
 				catch(Exception e){
 					new UIAlertView ("Error", "Wrong input format for crop kind!", null, "Continue").Show ();
+					return;
 				}
+				new UIAlertView ("Success", "Data has been saved", null, "Continue").Show (); 
 			});
 			section2.Add(update);
 			Root.Add (section2);

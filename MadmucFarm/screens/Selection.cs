@@ -28,16 +28,18 @@ namespace MadmucFarm
 					DBConnection.updateAcre(fieldID,Int32.Parse(acreElem.Value));
 				}
 				catch(Exception e){
-					new UIAlertView ("Error", "Wrong input format for acre!", null, "Continue").Show (); 
+					new UIAlertView ("Error", "Wrong input format for acre!", null, "Continue").Show ();
+					return;
 				}
 
 				try{
 					DBConnection.updateNote(fieldID,noteElem.Value);
 				}
 				catch(Exception e){
-					new UIAlertView ("Error", "Wrong input format for note!", null, "Continue").Show (); 
+					new UIAlertView ("Error", "Wrong input format for note!", null, "Continue").Show ();
+					return;
 				}
-				this.ResignFirstResponder();
+				new UIAlertView ("Success", "Data has been saved", null, "Continue").Show (); 
 			});
 
 
