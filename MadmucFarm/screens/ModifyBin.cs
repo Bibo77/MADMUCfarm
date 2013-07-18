@@ -36,7 +36,34 @@ namespace MadmucFarm
 			}
 			Root.Add(section);
 
-			var section2=new Section(){};
+			UIBarButtonItem update = new UIBarButtonItem (UIBarButtonSystemItem.Save);
+			this.NavigationItem.RightBarButtonItem =update;
+			update.Clicked+=(s,ev)=>{
+				try{
+					DBConnection.updateBinSize(binNum,Int32.Parse(binSizeElem.Value));
+				}
+				catch(Exception e){
+					new UIAlertView ("Error", "Wrong input format for bin size!", null, "Continue").Show ();
+					return;
+				}
+				try{
+					DBConnection.updateBinBushel(binNum,Int32.Parse(bushelElem.Value));
+				}
+				catch(Exception e){
+					new UIAlertView ("Error", "Wrong input format for bushel!", null, "Continue").Show ();
+					return;
+				}
+				try{
+					DBConnection.updateBinCrop(binNum,cropElem.Value);
+				}
+				catch(Exception e){
+					new UIAlertView ("Error", "Wrong input format for crop kind!", null, "Continue").Show ();
+					return;
+				}
+				new UIAlertView ("Success", "Data has been saved", null, "Continue").Show ();
+			};
+
+			/*var section2=new Section(){};
 			var update=new StringElement("Save",()=>{
 				try{
 					DBConnection.updateBinSize(binNum,Int32.Parse(binSizeElem.Value));
@@ -63,6 +90,7 @@ namespace MadmucFarm
 			});
 			section2.Add(update);
 			Root.Add (section2);
+			*/
 		}
 	}
 }
