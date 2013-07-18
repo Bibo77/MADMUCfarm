@@ -4,7 +4,7 @@ using MonoTouch.Foundation;
 using MonoTouch.UIKit;
 using System.Drawing;
 
-namespace UsaskFarm
+namespace MadmucFarm
 {
 	public class FloatElementEx : Element
 	{

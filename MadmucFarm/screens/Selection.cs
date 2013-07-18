@@ -5,7 +5,7 @@ using MonoTouch.Foundation;
 using MonoTouch.UIKit;
 using MonoTouch.Dialog;
 using ElementPack;
-using UsaskFarm;
+using SQLite; 
 
 namespace MadmucFarm
 {
@@ -47,6 +47,8 @@ namespace MadmucFarm
 			section0.Add(btnSave);
 			Root.Add(section0);
 
+			SQLiteConnection sql = DBConnection.initialDB(); 
+
 			var section = new Section ("choose the action you want to do") { };
 			var seed=new StringElement("Seed",()=>{
 				//add code here Wen
@@ -57,14 +59,19 @@ namespace MadmucFarm
 				//add code here Wen
 				this.NavigationController.PushViewController(new Chemical(fieldID),true);
 			});
+
+
 			var harvest=new StringElement("Harvest",()=>{
 				//add code here khaled
+				this.NavigationController.PushViewController(new Harvest(fieldID, sql),true);
 			});
 			var cultivation=new StringElement("Cultivation",()=>{
 				//add code here khaled
+				this.NavigationController.PushViewController(new Cultivation(fieldID, sql),true);
 			});
 			var soilTest=new StringElement("Soil Test",()=>{
 				//add code here khaled
+				this.NavigationController.PushViewController(new SoilTest(fieldID, sql),true);
 			});
 
 

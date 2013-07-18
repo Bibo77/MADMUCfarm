@@ -6,7 +6,7 @@ using MonoTouch.UIKit;
 using MonoTouch.Dialog;
 using ElementPack;
 
-namespace UsaskFarm
+namespace MadmucFarm
 {
 	public partial class Seed : DialogViewController
 	{
