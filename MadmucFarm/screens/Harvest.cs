@@ -76,7 +76,7 @@ namespace MadmucFarm
 				//insert to database
 				sql.Insert (harvestData);
 
-				new UIAlertView ("Saved", " ", null, "OK", null).Show ();
+				new UIAlertView ("Saved", "Your Data Succesfully Saved", null, "OK", null).Show ();
 			})
 				, true);
 
@@ -116,8 +116,6 @@ namespace MadmucFarm
 						select x;
 
 			if (query.Count () != 0) {
-				new UIAlertView ("Previous Data Loaded", " ", null, "OK", null).Show ();
-
 				//use the most recent data
 				var data = query.Last ();
 				//populate viewcontroller with data
