@@ -1,1 +1,1 @@
---debug --aot=mtriple=armv7-darwin,full,static,asmonly,direct-icalls,no-direct-calls,iphone-abi,outfile=/MonoTouch.Dialog-1.dll.armv7.s "/Users/terence/Desktop/projects/MadmucFarm/MadmucFarm/bin/iPhone/Debug/MadmucFarm.app/MonoTouch.Dialog-1.dll"
+--debug --aot=mtriple=armv7-darwin,full,static,asmonly,direct-icalls,no-direct-calls,iphone-abi,outfile=/MonoTouch.Dialog-1.dll.armv7.s "/Users/terence/Desktop/projects/MADMUCfarm/MadmucFarm/bin/iPhone/Debug/MadmucFarm.app/MonoTouch.Dialog-1.dll"

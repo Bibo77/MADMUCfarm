@@ -42,7 +42,7 @@ namespace MadmucFarm
 
 
 			fnc.ViewControllers=new []{
-				new FieldImage(farmName,farmID),
+				new FieldImage(farmName,farmID,fnc),
 				//new UIViewController { View = new UILabel { Text = "Animals (drag right)" } },
 			};
 
@@ -52,7 +52,7 @@ namespace MadmucFarm
 	}
 
 	public partial class FieldImage :  DialogViewController{
-		public FieldImage(string farmName,int farmID) : base (UITableViewStyle.Grouped, null)
+		public FieldImage(string farmName,int farmID,FlyoutNavigationController fnc) : base (UITableViewStyle.Grouped, null)
 		{
 			Root = new RootElement (null) {};
 			this.Pushing = true;
@@ -73,13 +73,21 @@ namespace MadmucFarm
 			section.Add (update);
 			Root.Add (section);
 
+
+
 			var section2 = new Section () { };
-			var scrollView=new UIScrollView (
-				new RectangleF (0,0,300,250) //modify this code later
-			);
+
 			var imageView = new UIImageView (UIImage.FromFile ("img/"+farmName+".jpg"));
+			var scrollView=new UIScrollView (
+				new RectangleF(0,0,fnc.View.Frame.Width-20,250)
+			);
+
 			scrollView.ContentSize = imageView.Image.Size;
 			scrollView.AddSubview (imageView);
+
+			scrollView.MaximumZoomScale = 3f;
+			scrollView.MinimumZoomScale = .1f;
+			scrollView.ViewForZoomingInScrollView += (UIScrollView sv) => { return imageView; };
 
 			var imageElement=new UIViewElement(null,scrollView,false);
 			section2.Add(imageElement);
