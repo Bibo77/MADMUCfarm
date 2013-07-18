@@ -15,7 +15,7 @@ namespace MadmucFarm
 		{
 		}
 
-		private static SQLiteConnection initialDB(){
+		public static SQLiteConnection initialDB(){
 
 			string dbName="db_MadmucFarm.db";
 			/*
