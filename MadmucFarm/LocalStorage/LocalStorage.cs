@@ -3,7 +3,7 @@ using SQLite;
 using System.IO;
 using MadmucFarm;
 
-namespace UsaskFarm
+namespace MadmucFarm
 {
 	public class LocalStorage
 	{

@@ -1,7 +1,7 @@
 using System;
 using SQLite;
 
-namespace UsaskFarm
+namespace MadmucFarm
 {
 	public class SeedDB
 	{

@@ -96,9 +96,11 @@
     <Folder Include="table\" />
     <Folder Include="Libs\" />
     <Folder Include="LocalStorage\" />
+    <Folder Include="BuisnessObjects\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
+    <None Include="BuisnessObjects\.DS_Store" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Main.cs" />
@@ -122,6 +124,12 @@
     <Compile Include="screens\Seed.cs" />
     <Compile Include="LocalStorage\LocalStorage.cs" />
     <Compile Include="LocalStorage\DBConnection.cs" />
+    <Compile Include="screens\Cultivation.cs" />
+    <Compile Include="BuisnessObjects\CultivationData.cs" />
+    <Compile Include="BuisnessObjects\HarvestData.cs" />
+    <Compile Include="BuisnessObjects\SoilTestData.cs" />
+    <Compile Include="screens\SoilTest.cs" />
+    <Compile Include="screens\Harvest.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
