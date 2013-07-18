@@ -4,49 +4,25 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>Default-Landscape@2x~ipad.png</key>
-		<data>
-		4qSWyqA7FBj3mizLhDT2glXLhes=
-		</data>
-		<key>Default-Landscape~ipad.png</key>
-		<data>
-		eHZBbrO5Wc8NGhJc27YFmO1xYI0=
-		</data>
-		<key>Default-Portrait@2x~ipad.png</key>
-		<data>
-		w6kIM3suO2H4ooZBs0PtJxtvpWM=
-		</data>
-		<key>Default-Portrait~ipad.png</key>
-		<data>
-		GjDH09HZzzymDZ8RXzLM9ehAa8k=
-		</data>
-		<key>Default@2x~iphone.png</key>
-		<data>
-		u6OqZfuhlLZlUVclR3O0Ba/m8Bs=
-		</data>
-		<key>Default~iphone.png</key>
-		<data>
-		NqhQRd93R7TU0Q/S6SDyZH6oaPo=
-		</data>
 		<key>FlyoutNavigation.dll</key>
 		<data>
 		vFFlfYndEgG3afw1SX0iXoUVdb8=
 		</data>
 		<key>MadmucFarm.exe</key>
 		<data>
-		JqxBes0TSFzrMHjyov0CREAzsX8=
+		gKHmg2PDQ0LPH8Mj/B/AHvhz3PU=
 		</data>
 		<key>MadmucFarm.exe.mdb</key>
 		<data>
-		8HFEmzjA6sza/CodBy9LOfOi1Lw=
+		ZvgGOhhfgvDB2w5oFFTavA5HchE=
 		</data>
 		<key>MonoTouch.Dialog-1.dll</key>
 		<data>
-		IHJWztEEYNY/m6XpHzAcmoL1yoA=
+		ylJQT7wvy5jDSywnqrp0/luP3W4=
 		</data>
 		<key>MonoTouch.Dialog-1.dll.mdb</key>
 		<data>
-		ukqL61H3S5NfR6BouIt4SkDoXVM=
+		p+0rTcNqI3frH++8fQnJ5PuQMsQ=
 		</data>
 		<key>MonoTouchDebugConfiguration.txt</key>
 		<data>
@@ -62,27 +38,27 @@
 		</data>
 		<key>System.Core.dll</key>
 		<data>
-		WUrux5E7c1KwN30W7g+g1yU//XM=
+		UJcZ0zxOImXF7IHVA8hd6uSUxFg=
 		</data>
 		<key>System.Core.dll.mdb</key>
 		<data>
-		0KjvKV/kvOi5ITLeYtKrdJAVdSQ=
+		9Owz8rILwlvWVJ8+/YI6CgATYno=
 		</data>
 		<key>System.Json.dll</key>
 		<data>
-		+OqNOBBAATwC5T2EEG65nGWnKp8=
+		qjaU0dLOfLytOL2EoN3tBMWVHiw=
 		</data>
 		<key>System.Json.dll.mdb</key>
 		<data>
-		mb+5QOl9otC0zOiFjsc3U+df6uY=
+		gQo7wvN5hr2u1a+peW/01bLXER8=
 		</data>
 		<key>System.dll</key>
 		<data>
-		EZBmywm8CNnPPvjbwPTfLFTmYWM=
+		XYuv22gmIFgOLQ4w3ximst+CfHU=
 		</data>
 		<key>System.dll.mdb</key>
 		<data>
-		kE3EpTW9tkXhcl/JnRF7dSOtvhs=
+		H6ZAGXTnG6KEnYgNPMQ5CMMKAxM=
 		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
@@ -98,19 +74,19 @@
 		</data>
 		<key>monotouch.dll</key>
 		<data>
-		oJIbKoOkyppCKwRdwApv/ope2Bs=
+		f364KklSmbBVbHTXcNYA6zRVU7s=
 		</data>
 		<key>monotouch.dll.mdb</key>
 		<data>
-		zabVp/z7e+WyG0rPZ/9Oy0zMkWA=
+		V9G1/ayasuVcALSlvasr/cszZOw=
 		</data>
 		<key>mscorlib.dll</key>
 		<data>
-		8cEPoydk+1JHLJaUhHOLp+WoSSo=
+		xAUQR6V3B8VOkjwQ7dSuo+skr3Q=
 		</data>
 		<key>mscorlib.dll.mdb</key>
 		<data>
-		fbk2cWwZi6mh2gGIbciMAuw1Z8w=
+		M0xKOQGJdwWy2/KK5sKu1+K7KAc=
 		</data>
 	</dict>
 	<key>rules</key>

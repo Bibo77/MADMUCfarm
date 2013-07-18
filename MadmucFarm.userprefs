@@ -1,42 +1,22 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone.6.1" />
-<<<<<<< HEAD
-  <MonoDevelop.Ide.Workbench ActiveDocument="MadmucFarm/DBConnection.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release|iPhone" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.Terence's iPod touch" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="MadmucFarm/Info.plist">
     <Files>
-      <File FileName="MadmucFarm/DBConnection.cs" Line="41" Column="30" />
-      <File FileName="MadmucFarm/AppDelegate.cs" Line="27" Column="24" />
-      <File FileName="MadmucFarm/screens/SelectFarm.cs" Line="20" Column="33" />
-      <File FileName="MadmucFarm/screens/SelectBin.cs" Line="18" Column="33" />
-      <File FileName="MadmucFarm/screens/ModifyBin.cs" Line="1" Column="1" />
-      <File FileName="MadmucFarm/table/Bin.cs" Line="1" Column="1" />
-      <File FileName="MadmucFarm/screens/SelectField.cs" Line="1" Column="1" />
-      <File FileName="MadmucFarm/screens/Selection.cs" Line="1" Column="1" />
-    </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State expanded="True" selected="True" />
-=======
-  <MonoDevelop.Ide.Workbench ActiveDocument="MadmucFarm/screens/Selection.cs">
-    <Files>
-      <File FileName="MadmucFarm/screens/Selection.cs" Line="71" Column="57" />
-      <File FileName="MadmucFarm/screens/Harvestt.cs" Line="40" Column="15" />
-      <File FileName="MadmucFarm/screens/Cultivation.cs" Line="65" Column="5" />
-      <File FileName="MadmucFarm/screens/SoilTest.cs" Line="32" Column="27" />
+      <File FileName="MadmucFarm/screens/Seed.cs" Line="196" Column="38" />
+      <File FileName="MadmucFarm/screens/Harvest.cs" Line="1" Column="1" />
+      <File FileName="MadmucFarm/screens/SelectField.cs" Line="74" Column="23" />
+      <File FileName="MadmucFarm/LocalStorage/DBConnection.cs" Line="34" Column="27" />
+      <File FileName="MadmucFarm/AppDelegate.cs" Line="31" Column="38" />
+      <File FileName="MadmucFarm/Info.plist" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
-          <Node name="MadmucFarm" expanded="True">
-            <Node name="screens" expanded="True" selected="True" />
+          <Node name="MadmucFarm" expanded="True" selected="True">
+            <Node name="LocalStorage" expanded="True" />
+            <Node name="table" expanded="True" />
           </Node>
         </State>
->>>>>>> 68735b6da979b423452202334cc1c3a4d9166749
-      </Pad>
-      <Pad Id="ClassPad">
-        <State expanded="True" selected="True" />
-      </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>

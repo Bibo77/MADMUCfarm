@@ -37,7 +37,7 @@ namespace MadmucFarm
 			Root.Add(section);
 
 			var section2=new Section(){};
-			var update=new StringElement("Update",()=>{
+			var update=new StringElement("Save",()=>{
 				try{
 					DBConnection.updateBinSize(binNum,Int32.Parse(binSizeElem.Value));
 				}
