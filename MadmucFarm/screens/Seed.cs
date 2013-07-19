@@ -190,7 +190,6 @@ namespace MadmucFarm
 
 				db.Insert(seed);
 
-
 				UIAlertView alert = new UIAlertView ();
 				alert.Title = "Saved";
 				alert.Message = "Your Data Successfully Saved";

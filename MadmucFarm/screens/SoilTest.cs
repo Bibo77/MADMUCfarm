@@ -40,8 +40,15 @@ namespace MadmucFarm
 				//insert to database
 				sql.Insert (soilTestData);
 
+				UIAlertView alert = new UIAlertView ();
+				alert.Title = "Success";
+				alert.Message = "Your Data Has Been Saved";
+				alert.AddButton("OK");
 
-				new UIAlertView ("Saved", "Your Data Succesfully Saved", null, "OK", null).Show ();
+				alert.Clicked += delegate {
+					this.NavigationController.PopViewControllerAnimated(true);
+				} ;
+				alert.Show();
 
 			})
 				, true);

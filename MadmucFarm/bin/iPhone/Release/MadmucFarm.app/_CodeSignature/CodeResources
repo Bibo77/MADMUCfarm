@@ -6,11 +6,7 @@
 	<dict>
 		<key>FlyoutNavigation.dll</key>
 		<data>
-<<<<<<< HEAD
-		b2GSYLWINXWbtrvwcRoN7P6cXSc=
-=======
-		x60oemhOCsiWszXTipGPzfQq7w8=
->>>>>>> d49cd3acc8702a1f058db173f9dac93f333f799c
+		J6BieGLtF1PHMBh+82QsY5qzqS4=
 		</data>
 		<key>Icon.png</key>
 		<data>
@@ -18,19 +14,11 @@
 		</data>
 		<key>MadmucFarm.exe</key>
 		<data>
-<<<<<<< HEAD
-		NfjFPnVVws5143DZbZD+ibdGapw=
+		k9+2hCYfpbi+L92rXTDo2U3/cYY=
 		</data>
 		<key>MonoTouch.Dialog-1.dll</key>
 		<data>
-		r3/lbPKfwTZoG+O6WXyp1SdAfG4=
-=======
-		jLu5dKYzV5AkxGXeODiK8oHiPGI=
-		</data>
-		<key>MonoTouch.Dialog-1.dll</key>
-		<data>
-		yaVx0VZz7g/mh+MBZT1AXF+ngso=
->>>>>>> d49cd3acc8702a1f058db173f9dac93f333f799c
+		MSHGwSOwkHHguD6ZVXwr2AfQUhY=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -38,27 +26,15 @@
 		</data>
 		<key>System.Core.dll</key>
 		<data>
-<<<<<<< HEAD
-		0tkl/OUxc/MObgBTsX92e8ijdCM=
+		uC5woJyOgGv831RhJ0z4I0CMMFo=
 		</data>
 		<key>System.Json.dll</key>
 		<data>
-		LNf81QaKqr9N3KASREMmPzyfCu8=
+		/AeyP5G3rejnoYbjvcuz2Uxx498=
 		</data>
 		<key>System.dll</key>
 		<data>
-		QvNql+aBMpOq+tSx3R0+0fHTqLA=
-=======
-		HWYD+WsMS4y6XILMQ23w19+LJjE=
-		</data>
-		<key>System.Json.dll</key>
-		<data>
-		ee9RPct+59nsNIJvAAN3wfOT7js=
-		</data>
-		<key>System.dll</key>
-		<data>
-		mMrByRPwUOrZY5TXgoqGJFrWqDg=
->>>>>>> d49cd3acc8702a1f058db173f9dac93f333f799c
+		TJWIjIfROeb2zYegrkzMGwSVjqA=
 		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
@@ -74,19 +50,11 @@
 		</data>
 		<key>monotouch.dll</key>
 		<data>
-<<<<<<< HEAD
-		thntO/yMuKFqFhIkGMLl9937BNA=
+		UcPFeE0S+m7m14B3I3htWnSXqvE=
 		</data>
 		<key>mscorlib.dll</key>
 		<data>
-		2hr5JEgcKnLWKrVAAq/M/5zvR3c=
-=======
-		69bQGW8Z4uH+T2I+gNiAXF5i9Xc=
-		</data>
-		<key>mscorlib.dll</key>
-		<data>
-		nXnx+1SIf5C4TxbcHlHYq7gsr9E=
->>>>>>> d49cd3acc8702a1f058db173f9dac93f333f799c
+		0ssPsJHuVljikTS0uuL2nOeu3Lw=
 		</data>
 	</dict>
 	<key>rules</key>

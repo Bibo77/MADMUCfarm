@@ -39,7 +39,11 @@ namespace MadmucFarm
 					new UIAlertView ("Error", "Wrong input format for note!", null, "Continue").Show ();
 					return;
 				}
-				new UIAlertView ("Success", "Data has been saved", null, "Continue").Show (); 
+				UIAlertView alert = new UIAlertView ();
+				alert.Title = "Success";
+				alert.Message = "Your Data Has Been Saved";
+				alert.AddButton("OK");
+				alert.Show();
 			});
 
 
