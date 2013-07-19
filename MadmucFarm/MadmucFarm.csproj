@@ -140,6 +140,7 @@
     <BundleResource Include="Resources\img\Kernen.jpg" />
     <BundleResource Include="Resources\img\Sutherland.jpg" />
     <BundleResource Include="Resources\Icon.png" />
+    <BundleResource Include="Resources\btnField.png" />
   </ItemGroup>
   <ItemGroup>
     <XamarinComponentReference Include="flyoutnavigation">
