@@ -6,7 +6,15 @@
 	<dict>
 		<key>FlyoutNavigation.dll</key>
 		<data>
+<<<<<<< HEAD
 		8VEfopRYMj5TlQ0EoeprnTqbwSg=
+=======
+<<<<<<< HEAD
+		b2GSYLWINXWbtrvwcRoN7P6cXSc=
+=======
+		x60oemhOCsiWszXTipGPzfQq7w8=
+>>>>>>> d49cd3acc8702a1f058db173f9dac93f333f799c
+>>>>>>> cfaba9ca9aea154afe5406720b7a31df5a836c4a
 		</data>
 		<key>Icon.png</key>
 		<data>
@@ -14,11 +22,27 @@
 		</data>
 		<key>MadmucFarm.exe</key>
 		<data>
+<<<<<<< HEAD
 		nC+/tPZJkldhdoscDd3kZ40fcWY=
 		</data>
 		<key>MonoTouch.Dialog-1.dll</key>
 		<data>
 		pUB9+twezzKaNeitp7D4XtwfGcA=
+=======
+<<<<<<< HEAD
+		NfjFPnVVws5143DZbZD+ibdGapw=
+		</data>
+		<key>MonoTouch.Dialog-1.dll</key>
+		<data>
+		r3/lbPKfwTZoG+O6WXyp1SdAfG4=
+=======
+		jLu5dKYzV5AkxGXeODiK8oHiPGI=
+		</data>
+		<key>MonoTouch.Dialog-1.dll</key>
+		<data>
+		yaVx0VZz7g/mh+MBZT1AXF+ngso=
+>>>>>>> d49cd3acc8702a1f058db173f9dac93f333f799c
+>>>>>>> cfaba9ca9aea154afe5406720b7a31df5a836c4a
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -26,7 +50,22 @@
 		</data>
 		<key>System.Core.dll</key>
 		<data>
+<<<<<<< HEAD
 		AX0CrmS8WxXnxpQvcN32ZhZsb/A=
+=======
+<<<<<<< HEAD
+		0tkl/OUxc/MObgBTsX92e8ijdCM=
+		</data>
+		<key>System.Json.dll</key>
+		<data>
+		LNf81QaKqr9N3KASREMmPzyfCu8=
+		</data>
+		<key>System.dll</key>
+		<data>
+		QvNql+aBMpOq+tSx3R0+0fHTqLA=
+=======
+		HWYD+WsMS4y6XILMQ23w19+LJjE=
+>>>>>>> cfaba9ca9aea154afe5406720b7a31df5a836c4a
 		</data>
 		<key>System.Json.dll</key>
 		<data>
@@ -34,15 +73,20 @@
 		</data>
 		<key>System.dll</key>
 		<data>
+<<<<<<< HEAD
 		wVbsir8n9MBwdF1s47nPYGm6FE0=
 		</data>
 		<key>btnField.png</key>
 		<data>
 		SUypAfsk/EdYgIPTAgC1ky3HW3Q=
+=======
+		mMrByRPwUOrZY5TXgoqGJFrWqDg=
+>>>>>>> d49cd3acc8702a1f058db173f9dac93f333f799c
+>>>>>>> cfaba9ca9aea154afe5406720b7a31df5a836c4a
 		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
-		Yln83WKvWj+caV6TikjcyjDrPGk=
+		DfG531Fe8I5WMs5dGVBd2Qo0v6g=
 		</data>
 		<key>img/Kernen.jpg</key>
 		<data>
@@ -54,11 +98,27 @@
 		</data>
 		<key>monotouch.dll</key>
 		<data>
+<<<<<<< HEAD
 		ZDJHJrYjuAfRMoY4z2ZHDbP6o8M=
 		</data>
 		<key>mscorlib.dll</key>
 		<data>
 		2Z9NP2b8sKpFKmxVquRx4owsSR4=
+=======
+<<<<<<< HEAD
+		thntO/yMuKFqFhIkGMLl9937BNA=
+		</data>
+		<key>mscorlib.dll</key>
+		<data>
+		2hr5JEgcKnLWKrVAAq/M/5zvR3c=
+=======
+		69bQGW8Z4uH+T2I+gNiAXF5i9Xc=
+		</data>
+		<key>mscorlib.dll</key>
+		<data>
+		nXnx+1SIf5C4TxbcHlHYq7gsr9E=
+>>>>>>> d49cd3acc8702a1f058db173f9dac93f333f799c
+>>>>>>> cfaba9ca9aea154afe5406720b7a31df5a836c4a
 		</data>
 	</dict>
 	<key>rules</key>
