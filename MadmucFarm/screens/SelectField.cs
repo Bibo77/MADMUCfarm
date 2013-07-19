@@ -20,10 +20,14 @@ namespace MadmucFarm
 			fnc.View.Frame = UIScreen.MainScreen.Bounds;
 			View.AddSubview (fnc.View);
 
-			//fix this , button for slide out fields
+			// button for slide out fields
+			/*
 			this.NavigationItem.SetRightBarButtonItem(new UIBarButtonItem (UIBarButtonSystemItem.Action, (s,e)=> {
 				fnc.ToggleMenu ();
 			}),true);
+			*/
+			this.NavigationItem.SetRightBarButtonItem(new UIBarButtonItem("Field", UIBarButtonItemStyle.Plain, (sender,args) => {fnc.ToggleMenu ();}), true);
+
 
 		    //create the menu
 			var fields = DBConnection.getAllFields(farmID);
