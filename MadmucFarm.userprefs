@@ -1,18 +1,17 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release|iPhone" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.Terence's iPod touch" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="MadmucFarm/screens/Harvest.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release|iPhoneSimulator" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone.6.1" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="MadmucFarm/AppDelegate.cs">
     <Files>
-      <File FileName="MadmucFarm/screens/Seed.cs" Line="161" Column="5" />
+      <File FileName="MadmucFarm/screens/Seed.cs" Line="1" Column="1" />
       <File FileName="MadmucFarm/screens/SelectField.cs" Line="27" Column="11" />
       <File FileName="MadmucFarm/LocalStorage/DBConnection.cs" Line="1" Column="1" />
-      <File FileName="MadmucFarm/AppDelegate.cs" Line="1" Column="1" />
-      <File FileName="MadmucFarm/Info.plist" />
+      <File FileName="MadmucFarm/AppDelegate.cs" Line="38" Column="61" />
       <File FileName="MadmucFarm/screens/SelectFarm.cs" Line="1" Column="1" />
       <File FileName="MadmucFarm/screens/Harvest.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
-        <State expanded="True" selected="True">
+        <State expanded="True">
           <Node name="MadmucFarm" expanded="True">
             <Node name="LocalStorage" expanded="True" />
             <Node name="Resources" expanded="True">
@@ -20,6 +19,7 @@
             </Node>
             <Node name="screens" expanded="True" />
             <Node name="table" expanded="True" />
+            <Node name="AppDelegate.cs" selected="True" />
           </Node>
         </State>
       </Pad>

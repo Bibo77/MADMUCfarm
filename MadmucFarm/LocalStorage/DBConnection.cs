@@ -87,7 +87,7 @@ namespace MadmucFarm
 			return result [0].note;
 		}
 
-		public static int getFieldAcre(int fieldID){
+		public static double getFieldAcre(int fieldID){
 			var db = initialDB();
 			var result= db.Query<Field> ("select acre from Field where fieldID="+fieldID);
 			return result [0].acre;
@@ -99,7 +99,7 @@ namespace MadmucFarm
 			//return result;
 		}
 
-		public static void insertField(string fieldName,int arce,int farmID,string note){
+		public static void insertField(string fieldName,double arce,int farmID,string note){
 			var db = initialDB();
 			db.Query<Field> ("insert into Field(fieldName,acre,farmID,note) Values ('" + fieldName + "',"+arce+","+farmID+",'"+note+"')");
 		}

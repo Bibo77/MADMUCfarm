@@ -141,6 +141,11 @@
     <BundleResource Include="Resources\img\Sutherland.jpg" />
     <BundleResource Include="Resources\Icon.png" />
     <BundleResource Include="Resources\btnField.png" />
+    <BundleResource Include="Resources\img\Brown.jpg" />
+    <BundleResource Include="Resources\img\Goodale.jpg" />
+    <BundleResource Include="Resources\img\Nasser.jpg" />
+    <BundleResource Include="Resources\img\Pulse.jpg" />
+    <BundleResource Include="Resources\img\Skarsgard.jpg" />
   </ItemGroup>
   <ItemGroup>
     <XamarinComponentReference Include="flyoutnavigation">
