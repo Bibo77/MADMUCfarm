@@ -8,25 +8,29 @@
 		<data>
 		vFFlfYndEgG3afw1SX0iXoUVdb8=
 		</data>
+		<key>Icon.png</key>
+		<data>
+		oyicFFp//FLIQ0OxpAIW+1+vSbw=
+		</data>
 		<key>MadmucFarm.exe</key>
 		<data>
-		gKHmg2PDQ0LPH8Mj/B/AHvhz3PU=
+		k18ReOoGlshtOU01pCM00pZ/n8w=
 		</data>
 		<key>MadmucFarm.exe.mdb</key>
 		<data>
-		ZvgGOhhfgvDB2w5oFFTavA5HchE=
+		H1JrvniXs0+tH1nhqwkZPJV0xHE=
 		</data>
 		<key>MonoTouch.Dialog-1.dll</key>
 		<data>
-		ylJQT7wvy5jDSywnqrp0/luP3W4=
+		fajeMmvqlIBNqmEOOd5vhoQXQAI=
 		</data>
 		<key>MonoTouch.Dialog-1.dll.mdb</key>
 		<data>
-		p+0rTcNqI3frH++8fQnJ5PuQMsQ=
+		k55jdBnMa03PJyD/x4MsGH+P2Ts=
 		</data>
 		<key>MonoTouchDebugConfiguration.txt</key>
 		<data>
-		77X7M1FmdCpT63nMjKMA5FtXFWU=
+		QQCk/N5OvHwtHwyCQ8JEgrC+PkI=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -38,11 +42,11 @@
 		</data>
 		<key>System.Core.dll</key>
 		<data>
-		UJcZ0zxOImXF7IHVA8hd6uSUxFg=
+		gV7pVz6bSwufuYOLAWAZurEaJY0=
 		</data>
 		<key>System.Core.dll.mdb</key>
 		<data>
-		9Owz8rILwlvWVJ8+/YI6CgATYno=
+		dCwodcpwRy5fgWy3CNYcJk7iCo0=
 		</data>
 		<key>System.Json.dll</key>
 		<data>
@@ -54,19 +58,43 @@
 		</data>
 		<key>System.dll</key>
 		<data>
-		XYuv22gmIFgOLQ4w3ximst+CfHU=
+		dpfNhO8Fv8Sfo5BNWVOde5337aU=
 		</data>
 		<key>System.dll.mdb</key>
 		<data>
-		H6ZAGXTnG6KEnYgNPMQ5CMMKAxM=
+		BRdKTT/VHxHWjNt86w9YbFCI/Yc=
+		</data>
+		<key>btnField.png</key>
+		<data>
+		SUypAfsk/EdYgIPTAgC1ky3HW3Q=
 		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
-		DfG531Fe8I5WMs5dGVBd2Qo0v6g=
+		Yln83WKvWj+caV6TikjcyjDrPGk=
+		</data>
+		<key>img/Brown.jpg</key>
+		<data>
+		+t71V6M9QVSDbLB4s+Gb5u1SUck=
+		</data>
+		<key>img/Goodale.jpg</key>
+		<data>
+		ksr9pW1cdB45yu8CNx/IE47wl5o=
 		</data>
 		<key>img/Kernen.jpg</key>
 		<data>
 		U9H9jsR3f3Rh5aXdngs2WNkrdi4=
+		</data>
+		<key>img/Nasser.jpg</key>
+		<data>
+		dvaeefYDQfeti9jgZ+M4Ic4NB00=
+		</data>
+		<key>img/Pulse.jpg</key>
+		<data>
+		5sQKUELBscr+JAGt1homQPNLh68=
+		</data>
+		<key>img/Skarsgard.jpg</key>
+		<data>
+		5MhyLqUMyCrempgDpSoyjqn3vAg=
 		</data>
 		<key>img/Sutherland.jpg</key>
 		<data>
@@ -74,19 +102,19 @@
 		</data>
 		<key>monotouch.dll</key>
 		<data>
-		f364KklSmbBVbHTXcNYA6zRVU7s=
+		XaoOEpkleqwQnO6xXhwk0ah/fjI=
 		</data>
 		<key>monotouch.dll.mdb</key>
 		<data>
-		V9G1/ayasuVcALSlvasr/cszZOw=
+		V9QlrQOYUfHYQ/BY6liwHhttNU4=
 		</data>
 		<key>mscorlib.dll</key>
 		<data>
-		xAUQR6V3B8VOkjwQ7dSuo+skr3Q=
+		oMKuntqvbWG2YrbqQiS0o2Uor/M=
 		</data>
 		<key>mscorlib.dll.mdb</key>
 		<data>
-		M0xKOQGJdwWy2/KK5sKu1+K7KAc=
+		5l8BqDpTU2KLOUw1rR9ObZc1QW0=
 		</data>
 	</dict>
 	<key>rules</key>

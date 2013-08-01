@@ -3,12 +3,12 @@
 <plist version="1.0">
 <dict>
 	<key>application-identifier</key>
-	<string>G3Q4F89986.KhaledsDevmadmucfarm</string>
+	<string>E33K9Y2K85.madmucfarm</string>
 	<key>get-task-allow</key>
 	<true/>
 	<key>keychain-access-groups</key>
 	<array>
-		<string>G3Q4F89986.KhaledsDevmadmucfarm</string>
+		<string>E33K9Y2K85.madmucfarm</string>
 	</array>
 </dict>
 </plist>

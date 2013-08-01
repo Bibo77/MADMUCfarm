@@ -61,7 +61,7 @@ namespace MadmucFarm
 
 			// 3. Seeding Depth
 			Section seedDepthS = new Section ("Seeding Depth (in)");
-			seedDepth = new FloatElementEx (2, lockable: false) {
+			seedDepth = new FloatElementEx (0, lockable: false) {
 				ShowCaption = true,
 				UseCaptionForValueDisplay = true,
 				MaxValue = 2,
@@ -94,7 +94,7 @@ namespace MadmucFarm
 
 			// 6. Seed Rate
 			Section seedRateS = new Section ("Seed Rate (lb/ac)");
-			seedRate = new FloatElementEx (300, lockable: false) {
+			seedRate = new FloatElementEx (0, lockable: false) {
 				ShowCaption = true,
 				UseCaptionForValueDisplay = true,
 				MaxValue = 300,
@@ -111,7 +111,7 @@ namespace MadmucFarm
 
 			// 8. NH3
 			Section NH3S = new Section ("NH3 (lb/ac)");
-			NH3 = new FloatElementEx (120, lockable: false) { 
+			NH3 = new FloatElementEx (0, lockable: false) { 
 				ShowCaption = true,
 				UseCaptionForValueDisplay = true,
 				MaxValue = 120,
@@ -120,7 +120,7 @@ namespace MadmucFarm
 
 			// 9. 11-52-20
 			Section _11S = new Section ("11-52-20 (lb/ac)");
-			_11 = new FloatElementEx (100, lockable: false) { 
+			_11 = new FloatElementEx (0, lockable: false) { 
 				ShowCaption = true,
 				UseCaptionForValueDisplay = true,
 				MaxValue = 100,
