@@ -21,6 +21,7 @@ namespace MadmucFarm
 			EntryElement binSizeElem=new EntryElement("..",null,null);
 			EntryElement bushelElem=new EntryElement("..",null,null);
 			EntryElement cropElem=new EntryElement("..",null,null);
+			EntryElement moisterElem=new EntryElement("..",null,null);
 			//var binNumElem=new MultilineElement("Bin # ",binNum.ToString());
 			//section.Add(binNumElem);
 			foreach(Bin theBin in theBins){
@@ -30,9 +31,12 @@ namespace MadmucFarm
 				bushelElem.ShouldReturn+=()=>{bushelElem.ResignFirstResponder(true);   return true;};
 			    cropElem=new EntryElement("Crop Kind: ","Enter crop kind in this bin here",theBin.crop);
 				cropElem.ShouldReturn+=()=>{cropElem.ResignFirstResponder(true);   return true;};
+				moisterElem=new EntryElement("% Moister: ","Enter % moister of this bin here",theBin.moister);
+				moisterElem.ShouldReturn+=()=>{cropElem.ResignFirstResponder(true);   return true;};
 				section.Add (binSizeElem);
 				section.Add (bushelElem);
 				section.Add (cropElem);
+				section.Add (moisterElem);
 			}
 			Root.Add(section);
 
@@ -60,6 +64,15 @@ namespace MadmucFarm
 					new UIAlertView ("Error", "Wrong input format for crop kind!", null, "Continue").Show ();
 					return;
 				}
+				try{
+					DBConnection.updateBinMoister(binNum,moisterElem.Value);
+				}
+				catch(Exception e){
+					new UIAlertView ("Error", "Wrong input format for moister!", null, "Continue").Show ();
+					return;
+				}
+
+
 
 				UIAlertView alert = new UIAlertView ();
 				alert.Title = "Success";

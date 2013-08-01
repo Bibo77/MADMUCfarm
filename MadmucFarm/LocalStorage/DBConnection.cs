@@ -32,11 +32,16 @@ namespace MadmucFarm
 			db.CreateTable<Farm> ();
 			db.CreateTable<Field> ();
 			db.CreateTable<Bin> ();
+			db.CreateTable<RainGauge> ();
 			return db;
 		}
 
 		//***********************************
 
+		public static void updateBinMoister(int binID,string moister){
+			var db = initialDB ();
+			db.Query<Bin> ("update Bin set moister ='"+moister+"' where binID="+binID);
+		}
 
 		public static void updateBinCrop(int binID,string crop){
 			var db = initialDB ();
@@ -70,7 +75,7 @@ namespace MadmucFarm
 				db.Query<Bin> ("insert into Bin(binID,binSize,bushel,crop) Values (" + i + "," + 0 + "," + 0 + "," + "''" + ")");
 			}
 		}
-
+		//--------------------------------------------------------------------
 		public static void updateNote(int fieldID,string note){
 			var db = initialDB ();
 			db.Query<Field> ("update Field set note ='"+note+"' where fieldID="+fieldID);
@@ -103,9 +108,13 @@ namespace MadmucFarm
 			var db = initialDB();
 			db.Query<Field> ("insert into Field(fieldName,acre,farmID,note) Values ('" + fieldName + "',"+arce+","+farmID+",'"+note+"')");
 		}
-
-
-
+		//---------------------------------------------------------------------------------------------------
+		public static IEnumerable<RainGauge> getRainDetails(int farmID) {
+			var db = initialDB();
+			return db.Query<RainGauge> ("select * from RainGauge where farmID="+farmID);
+			//return result;
+		}
+		//------------------------------------------------------------------------------------------------
 		public static int getRain(int farmID){
 			var db = initialDB ();
 			var result=db.Query<Farm> ("select rain from Farm where farmID="+farmID);
@@ -114,7 +123,16 @@ namespace MadmucFarm
 
 		public static void updateRain(int farmID,int rain){
 			var db = initialDB ();
-			db.Query<Farm> ("update Farm set rain ="+rain+" where farmID="+farmID);
+			int oldRain = getRain (farmID);
+			db.Query<Farm> ("update Farm set rain ="+(rain+oldRain)+" where farmID="+farmID);
+
+			RainGauge nrg= new RainGauge();
+			nrg.farmID=farmID;
+			nrg.rain=rain;
+			nrg.theDate=DateTime.Now;
+			db.Insert(nrg);
+
+			//db.Query<RainGauge> ("insert into RainGuage(farmID,rain,theDate) Values ('" + farmID + "',"+rain+","+DateTime.Now+")");
 		}
 		public static void insertFarm(String farmName){
 			var db = initialDB();
@@ -126,7 +144,7 @@ namespace MadmucFarm
 			return db.Query<Farm> ("select * from Farm");
 			//return result;
 		}
-
+		//-------------------------------------------------------------------------
 		public static void insertUser(String userName,String password){
 			var db =initialDB();
 			db.Query<User> ("insert into User (userName,password) Values ('" + userName + "','" + password + "');");

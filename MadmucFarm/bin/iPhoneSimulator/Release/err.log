@@ -1,6 +1,117 @@
-2013-07-23 15:42:01.957 MadmucFarm[22984:21b03] user name is: 
-2013-07-23 15:42:01.959 MadmucFarm[22984:21b03] password is: 
-2013-07-23 15:42:01.961 MadmucFarm[22984:21b03] userName is : 
-2013-07-23 15:42:15.346 MadmucFarm[22984:21b03] Farm Name is: Brown
-2013-07-23 15:42:20.230 MadmucFarm[22984:21b03] Farm Name is: Goodale
-2013-07-23 15:42:23.497 MadmucFarm[22984:21b03] Farm Name is: Kernen
+2013-08-01 16:53:30.830 MadmucFarm[34180:21e03] user name is: 
+2013-08-01 16:53:30.831 MadmucFarm[34180:21e03] password is: 
+2013-08-01 16:53:30.834 MadmucFarm[34180:21e03] userName is : 
+2013-08-01 16:53:31.632 MadmucFarm[34180:21e03] Farm Name is: Brown
+
+Unhandled Exception:
+System.NullReferenceException: Object reference not set to an instance of an object
+  at MadmucFarm.FieldImage+<FieldImage>c__AnonStorey6.<>m__12 () [0x00012] in /Users/terence/Desktop/projects/MADMUCfarm/MadmucFarm/screens/SelectField.cs:84 
+  at MonoTouch.Dialog.StringElement.Selected (MonoTouch.Dialog.DialogViewController dvc, MonoTouch.UIKit.UITableView tableView, MonoTouch.Foundation.NSIndexPath indexPath) [0x0000b] in /Developer/MonoTouch/Source/MonoTouch.Dialog/MonoTouch.Dialog/Elements.cs:692 
+  at MonoTouch.Dialog.DialogViewController.Selected (MonoTouch.Foundation.NSIndexPath indexPath) [0x00029] in /Developer/MonoTouch/Source/MonoTouch.Dialog/MonoTouch.Dialog/DialogViewController.cs:519 
+  at MonoTouch.Dialog.DialogViewController+Source.RowSelected (MonoTouch.UIKit.UITableView tableView, MonoTouch.Foundation.NSIndexPath indexPath) [0x00019] in /Developer/MonoTouch/Source/MonoTouch.Dialog/MonoTouch.Dialog/DialogViewController.cs:365 
+  at (wrapper managed-to-native) MonoTouch.UIKit.UIApplication:UIApplicationMain (int,string[],intptr,intptr)
+  at MonoTouch.UIKit.UIApplication.Main (System.String[] args, System.String principalClassName, System.String delegateClassName) [0x0004c] in /Developer/MonoTouch/Source/monotouch/src/UIKit/UIApplication.cs:38 
+  at MadmucFarm.Application.Main (System.String[] args) [0x00000] in /Users/terence/Desktop/projects/MADMUCfarm/MadmucFarm/Main.cs:16 
+2013-08-01 16:53:32.541 MadmucFarm[34180:21e03] Unhandled managed exception: Object reference not set to an instance of an object (System.NullReferenceException)
+  at MadmucFarm.FieldImage+<FieldImage>c__AnonStorey6.<>m__12 () [0x00012] in /Users/terence/Desktop/projects/MADMUCfarm/MadmucFarm/screens/SelectField.cs:84 
+  at MonoTouch.Dialog.StringElement.Selected (MonoTouch.Dialog.DialogViewController dvc, MonoTouch.UIKit.UITableView tableView, MonoTouch.Foundation.NSIndexPath indexPath) [0x0000b] in /Developer/MonoTouch/Source/MonoTouch.Dialog/MonoTouch.Dialog/Elements.cs:692 
+  at MonoTouch.Dialog.DialogViewController.Selected (MonoTouch.Foundation.NSIndexPath indexPath) [0x00029] in /Developer/MonoTouch/Source/MonoTouch.Dialog/MonoTouch.Dialog/DialogViewController.cs:519 
+  at MonoTouch.Dialog.DialogViewController+Source.RowSelected (MonoTouch.UIKit.UITableView tableView, MonoTouch.Foundation.NSIndexPath indexPath) [0x00019] in /Developer/MonoTouch/Source/MonoTouch.Dialog/MonoTouch.Dialog/DialogViewController.cs:365 
+  at (wrapper managed-to-native) MonoTouch.UIKit.UIApplication:UIApplicationMain (int,string[],intptr,intptr)
+  at MonoTouch.UIKit.UIApplication.Main (System.String[] args, System.String principalClassName, System.String delegateClassName) [0x0004c] in /Developer/MonoTouch/Source/monotouch/src/UIKit/UIApplication.cs:38 
+  at MadmucFarm.Application.Main (System.String[] args) [0x00000] in /Users/terence/Desktop/projects/MADMUCfarm/MadmucFarm/Main.cs:16 
+mono-rt: Stacktrace:
+
+
+mono-rt: 
+Native stacktrace:
+
+
+mono-rt: 	0   MadmucFarm                          0x000b0b6a mono_handle_native_sigsegv + 266
+
+mono-rt: 	1   MadmucFarm                          0x000bd3cd sigabrt_signal_handler + 109
+
+mono-rt: 	2   libsystem_c.dylib                   0x9a0cd59b _sigtramp + 43
+
+mono-rt: 	3   ???                                 0xffffffff 0x0 + 4294967295
+
+mono-rt: 	4   libsystem_sim_c.dylib               0x0425d57b abort + 140
+
+mono-rt: 	5   MadmucFarm                          0x00233d0b monotouch_unhandled_exception_handler + 283
+
+mono-rt: 	6   MadmucFarm                          0x000ad9a7 mono_invoke_unhandled_exception_hook + 231
+
+mono-rt: 	7   MadmucFarm                          0x000b208a mono_handle_exception_internal + 4170
+
+mono-rt: 	8   MadmucFarm                          0x000b21d9 mono_handle_exception + 41
+
+mono-rt: 	9   MadmucFarm                          0x0005432e altstack_handle_and_restore + 142
+
+mono-rt: 	10  ???                                 0x16beffac 0x0 + 381616044
+
+mono-rt: 	11  ???                                 0x16aa08d8 0x0 + 380242136
+
+mono-rt: 	12  ???                                 0x16aa0839 0x0 + 380241977
+
+mono-rt: 	13  ???                                 0x16aa06d8 0x0 + 380241624
+
+mono-rt: 	14  ???                                 0x16aa076f 0x0 + 380241775
+
+mono-rt: 	15  MadmucFarm                          0x000de885 mono_jit_runtime_invoke + 741
+
+mono-rt: 	16  MadmucFarm                          0x0018496e mono_runtime_invoke + 126
+
+mono-rt: 	17  MadmucFarm                          0x0022cc3e monotouch_trampoline + 3822
+
+mono-rt: 	18  UIKit                               0x0284a285 -[UITableView _selectRowAtIndexPath:animated:scrollPosition:notifyDelegate:] + 1194
+
+mono-rt: 	19  UIKit                               0x0284a4ed -[UITableView _userSelectRowAtPendingSelectionIndexPath:] + 201
+
+mono-rt: 	20  Foundation                          0x019b35b3 __NSFireDelayedPerform + 380
+
+mono-rt: 	21  CoreFoundation                      0x01358376 __CFRUNLOOP_IS_CALLING_OUT_TO_A_TIMER_CALLBACK_FUNCTION__ + 22
+
+mono-rt: 	22  CoreFoundation                      0x01357e06 __CFRunLoopDoTimer + 534
+
+mono-rt: 	23  CoreFoundation                      0x0133fa82 __CFRunLoopRun + 1810
+
+mono-rt: 	24  CoreFoundation                      0x0133ef44 CFRunLoopRunSpecific + 276
+
+mono-rt: 	25  CoreFoundation                      0x0133ee1b CFRunLoopRunInMode + 123
+
+mono-rt: 	26  GraphicsServices                    0x04d8e7e3 GSEventRunModal + 88
+
+mono-rt: 	27  GraphicsServices                    0x04d8e668 GSEventRun + 104
+
+mono-rt: 	28  UIKit                               0x0279affc UIApplicationMain + 1211
+
+mono-rt: 	29  ???                                 0x0ff55fd4 0x0 + 267739092
+
+mono-rt: 	30  ???                                 0x0ff54fb4 0x0 + 267734964
+
+mono-rt: 	31  ???                                 0x0ff54cd0 0x0 + 267734224
+
+mono-rt: 	32  ???                                 0x0ff54d5f 0x0 + 267734367
+
+mono-rt: 	33  MadmucFarm                          0x000de885 mono_jit_runtime_invoke + 741
+
+mono-rt: 	34  MadmucFarm                          0x0018496e mono_runtime_invoke + 126
+
+mono-rt: 	35  MadmucFarm                          0x00188974 mono_runtime_exec_main + 420
+
+mono-rt: 	36  MadmucFarm                          0x00188ce5 mono_runtime_run_main + 725
+
+mono-rt: 	37  MadmucFarm                          0x0004d245 mono_jit_exec + 149
+
+mono-rt: 	38  MadmucFarm                          0x002213f4 main + 1988
+
+mono-rt: 	39  MadmucFarm                          0x00003595 start + 53
+
+mono-rt: 
+=================================================================
+Got a SIGABRT while executing native code. This usually indicates
+a fatal error in the mono runtime or one of the native libraries 
+used by your application.
+=================================================================
+
+

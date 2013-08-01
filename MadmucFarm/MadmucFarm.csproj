@@ -134,6 +134,8 @@
     <Compile Include="BuisnessObjects\SoilTestData.cs" />
     <Compile Include="screens\SoilTest.cs" />
     <Compile Include="screens\Harvest.cs" />
+    <Compile Include="table\RainGauge.cs" />
+    <Compile Include="screens\RainDetail.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
