@@ -12,7 +12,10 @@ namespace MadmucFarm
 	{
 		int fieldId;
 		UIBarButtonItem saveBtn;
+		bool flag=false;
 
+		Dictionary<string,ChemicalTemplate> chemicalTemplateDict;
+		RadioGroup chemicalTemplate;
 		DateElement chemicalDate;
 		EntryElement tools;
 		EntryElement chemicalTypes;
@@ -35,6 +38,31 @@ namespace MadmucFarm
 
 		public void initializeUserInterface ()
 		{
+			// 0. Chemical Template
+
+			chemicalTemplateDict = new Dictionary<string, ChemicalTemplate> ();
+			chemicalTemplateDict = LocalStorage.getLocalStorageManager ().loadChemicalTemplate();
+
+			Section chemicalTemplateS = new Section ("Chemical Template");
+			chemicalTemplate = new RadioGroup (0);
+
+
+
+			Section stSection = new Section ();
+			foreach(var templateName in chemicalTemplateDict){
+				var t = new myRadioElement(templateName.Value.templateName);
+				t.OnSelected += delegate(object sender, EventArgs e) {
+
+					InvokeOnMainThread(()=>{
+						loadValueFromTemplate(t.Caption);
+					});
+				};
+				stSection .Add(t);
+			}
+			RootElement stRoot = new RootElement ("Chemical Template", chemicalTemplate) { };
+			stRoot.Add(stSection);
+			chemicalTemplateS.Add (stRoot);
+
 			// 1. Chemical Date
 			Section chemicalDateS = new Section ("Chemical Date");
 			chemicalDate = new DateElement ("", DateTime.Now);
@@ -77,7 +105,7 @@ namespace MadmucFarm
 			note = new SimpleMultilineEntryElement ("", " ") { Editable = true }; 
 			noteS.Add (note);
 
-
+			Root.Add (chemicalTemplateS);
 			Root.Add (chemicalDateS);
 			Root.Add (implementedUsedS);
 			Root.Add (chemicalTypeS);
@@ -98,7 +126,14 @@ namespace MadmucFarm
 		public override void ViewWillAppear (bool animated)
 		{
 			base.ViewWillAppear (animated);
-			ReadDataFromLocalStorage ();
+			if (!flag) {
+				ReadDataFromLocalStorage ();
+
+			} else {
+
+				flag = false;
+			
+			}
 		}
 
 		public void RecordChemicalHistory(){
@@ -112,6 +147,7 @@ namespace MadmucFarm
 			chemical.note = note.Value;
 			chemical.implementedUsed = tools.Value;
 			chemical.fieldId = fieldId;
+			chemical.templateIndex = chemicalTemplate.Selected;
 
 			db.Insert (chemical);
 
@@ -141,8 +177,22 @@ namespace MadmucFarm
 				chemicalTypes.Value = chemical.chemicalTypes;
 				note.Value = chemical.note;
 				tools.Value = chemical.implementedUsed;
+				chemicalTemplate.Selected = chemical.templateIndex;
 
 			}
+		}
+
+
+		public void loadValueFromTemplate(string templateName)
+		{
+			//Console.Out.WriteLine(templateName);
+			var t = chemicalTemplateDict [templateName];
+			flag = true;
+
+			tools.Value = t.implementedUsed;
+			chemicalRate.Value = t.chemicalRates;
+			chemicalTypes.Value = t.chemicalTypes;
+
 		}
 	}
 }

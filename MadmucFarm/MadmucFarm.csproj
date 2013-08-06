@@ -92,6 +92,13 @@
       <HintPath>..\Components\sqlite-net-1.0.1\lib\ios\SQLite.dll</HintPath>
     </Reference>
     <Reference Include="Mono.Data.Sqlite" />
+    <Reference Include="Newtonsoft.Json.MonoTouch">
+      <HintPath>..\..\..\Matics\Lib\Newtonsoft.Json-master\Newtonsoft.Json\bin\Release\Newtonsoft.Json.MonoTouch.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json.MonoTouch">
+      <HintPath>..\..\..\Matics\Lib\Newtonsoft.Json-master\Newtonsoft.Json\bin\Release\Newtonsoft.Json.MonoTouch.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Json" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
@@ -101,6 +108,7 @@
     <Folder Include="Libs\" />
     <Folder Include="LocalStorage\" />
     <Folder Include="BuisnessObjects\" />
+    <Folder Include="WebRequest\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -136,6 +144,9 @@
     <Compile Include="screens\Harvest.cs" />
     <Compile Include="table\RainGauge.cs" />
     <Compile Include="screens\RainDetail.cs" />
+    <Compile Include="WebRequest\WebRequestManager.cs" />
+    <Compile Include="table\SeedTemplate.cs" />
+    <Compile Include="table\ChemicalTemplate.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>

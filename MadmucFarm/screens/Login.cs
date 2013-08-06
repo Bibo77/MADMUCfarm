@@ -31,6 +31,12 @@ namespace MadmucFarm
 				var pass=DBConnection.isUser(userName.Value,password.Value);//change this and use userName.Vale...
 
 				if(pass){
+					// download templates, before go to another screen
+
+					var webRequest = WebRequestManager.getWebRequestManager();
+					webRequest.downloadSeedTemplate();
+					webRequest.downloadChemicalTemplate();
+					//
 					var farm=new SelectFarm();
 					this.NavigationController.PushViewController(farm,true);
 				}
