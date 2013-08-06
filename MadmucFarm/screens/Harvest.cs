@@ -41,12 +41,13 @@ namespace MadmucFarm
 			yield.ShowCaption = true; 
 			yield.MinValue = 0;
 			yield.MaxValue = 120; 
-			yield.Continuous = true; 
+		
 			moisture.UseCaptionForValueDisplay = true; 
 			moisture.ShowCaption = true; 
 			moisture.MinValue = 0; 
 			moisture.MaxValue = 25;
 			notes.Editable = true; 
+
 			implement.ShouldReturn += delegate {
 				implement.ResignFirstResponder (true); 
 				return true;
@@ -59,6 +60,7 @@ namespace MadmucFarm
 
 			this.Title = "Harvest";
 			this.Pushing = true; 
+
 			//Create the save button
 			this.NavigationItem.SetRightBarButtonItem (
 				new UIBarButtonItem (UIBarButtonSystemItem.Save, (sender,args) => {
@@ -110,6 +112,7 @@ namespace MadmucFarm
 				},
 			};
 
+
 		}
 
 		public override void ViewDidLoad ()
@@ -118,7 +121,7 @@ namespace MadmucFarm
 
 
 
-			//grab from database, according the unique field ID
+			//grab from database, according the unique field ID, if data exists
 			var query = from x in sql.Table<HarvestData> ()
 					where x.DbField == this.fieldID
 						select x;

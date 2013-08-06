@@ -75,7 +75,7 @@ namespace MadmucFarm
 			base.ViewDidLoad ();
 
 
-			//grab from database
+			//grab from database if data exists
 			var q = from x in sql.Table<SoilTestData> ()
 				where x.DbField == this.fieldID
 					select x;
