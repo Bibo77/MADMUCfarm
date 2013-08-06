@@ -13,6 +13,7 @@ namespace MadmucFarm
 		public int binSize{ get; set;}
 		public int bushel{ get; set;}
 		public string crop{get;set;}
+		public string moister{ get; set;}
 	}
 }
 

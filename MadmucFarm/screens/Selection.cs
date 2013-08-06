@@ -19,6 +19,7 @@ namespace MadmucFarm
 
 			var section0 = new Section ("Field Info:") { };
 			var acreElem=new EntryElement("Acre: ","Enter field size here",DBConnection.getFieldAcre(fieldID).ToString());
+			acreElem.KeyboardType = UIKeyboardType.NumbersAndPunctuation;
 			acreElem.ShouldReturn+=()=>{acreElem.ResignFirstResponder(true);return true;};
 			var noteElem=new SimpleMultilineEntryElement("Note",DBConnection.getFieldNote(fieldID));
 			noteElem.Editable=true;

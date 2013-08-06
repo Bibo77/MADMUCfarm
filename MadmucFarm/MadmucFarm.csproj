@@ -92,6 +92,13 @@
       <HintPath>..\Components\sqlite-net-1.0.1\lib\ios\SQLite.dll</HintPath>
     </Reference>
     <Reference Include="Mono.Data.Sqlite" />
+    <Reference Include="Newtonsoft.Json.MonoTouch">
+      <HintPath>..\..\..\Matics\Lib\Newtonsoft.Json-master\Newtonsoft.Json\bin\Release\Newtonsoft.Json.MonoTouch.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json.MonoTouch">
+      <HintPath>..\..\..\Matics\Lib\Newtonsoft.Json-master\Newtonsoft.Json\bin\Release\Newtonsoft.Json.MonoTouch.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Json" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
@@ -100,7 +107,12 @@
     <Folder Include="table\" />
     <Folder Include="Libs\" />
     <Folder Include="LocalStorage\" />
+<<<<<<< HEAD
     <Folder Include="BusinessObjects\" />
+=======
+    <Folder Include="BuisnessObjects\" />
+    <Folder Include="WebRequest\" />
+>>>>>>> e5fae0714db5dbac666ba1ff2c381874d3c908a3
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -131,9 +143,17 @@
     <Compile Include="screens\Cultivation.cs" />
     <Compile Include="screens\SoilTest.cs" />
     <Compile Include="screens\Harvest.cs" />
+<<<<<<< HEAD
     <Compile Include="BusinessObjects\CultivationData.cs" />
     <Compile Include="BusinessObjects\HarvestData.cs" />
     <Compile Include="BusinessObjects\SoilTestData.cs" />
+=======
+    <Compile Include="table\RainGauge.cs" />
+    <Compile Include="screens\RainDetail.cs" />
+    <Compile Include="WebRequest\WebRequestManager.cs" />
+    <Compile Include="table\SeedTemplate.cs" />
+    <Compile Include="table\ChemicalTemplate.cs" />
+>>>>>>> e5fae0714db5dbac666ba1ff2c381874d3c908a3
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
@@ -141,6 +161,11 @@
     <BundleResource Include="Resources\img\Sutherland.jpg" />
     <BundleResource Include="Resources\Icon.png" />
     <BundleResource Include="Resources\btnField.png" />
+    <BundleResource Include="Resources\img\Brown.jpg" />
+    <BundleResource Include="Resources\img\Goodale.jpg" />
+    <BundleResource Include="Resources\img\Nasser.jpg" />
+    <BundleResource Include="Resources\img\Pulse.jpg" />
+    <BundleResource Include="Resources\img\Skarsgard.jpg" />
   </ItemGroup>
   <ItemGroup>
     <XamarinComponentReference Include="flyoutnavigation">

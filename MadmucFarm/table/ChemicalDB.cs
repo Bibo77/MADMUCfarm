@@ -16,6 +16,7 @@ namespace MadmucFarm
 		public string chemicalRates { set; get; }
 		public string chemicalTypes{ set; get; }
 		public string note { set; get; }
+		public int templateIndex { set; get; }
 
 	}
 }

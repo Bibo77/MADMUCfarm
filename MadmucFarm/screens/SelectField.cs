@@ -42,28 +42,29 @@ namespace MadmucFarm
 				});
 				menuSection.Add (fieldNameElment);
 			}
+
 			fnc.NavigationRoot=new RootElement("Fields"){menuSection};
 
 
 			fnc.ViewControllers=new []{
-				new FieldImage(farmName,farmID,fnc),
+				new FieldImage(farmName,farmID,fnc,this),
 				//new UIViewController { View = new UILabel { Text = "Animals (drag right)" } },
 			};
-
-
 
 		}
 	}
 
 	public partial class FieldImage :  DialogViewController{
-		public FieldImage(string farmName,int farmID,FlyoutNavigationController fnc) : base (UITableViewStyle.Grouped, null)
+		public FieldImage(string farmName,int farmID,FlyoutNavigationController fnc,SelectField sf) : base (UITableViewStyle.Grouped, null)
 		{
 			Root = new RootElement (null) {};
 			this.Pushing = true;
 
 			var section = new Section () {};
-			var rainGuage=new EntryElement ("Rain Guage","enter rain guage",DBConnection.getRain(farmID).ToString());
-			var update=new StringElement("Save",()=>{
+			var totalRainGuage = new StringElement ("Total Raid Guage(mm): " + DBConnection.getRain (farmID),()=>{});
+			var rainGuage=new EntryElement ("New Rain Guage(mm): ",null,"         ");
+			rainGuage.KeyboardType = UIKeyboardType.NumbersAndPunctuation;
+			var update=new StringElement("Add",()=>{
 				try{
 				DBConnection.updateRain(farmID,Int32.Parse(rainGuage.Value));
 				}
@@ -77,8 +78,15 @@ namespace MadmucFarm
 				alert.AddButton("OK");
 				alert.Show(); 
 			});
+			var showDetail=new StringElement("Show Rain Guage Detail",()=>{
+				RainDetail rd=new RainDetail(farmID,farmName);
+				sf.NavigationController.PushViewController(rd,true);
+			});
+			section.Add (totalRainGuage);
 			section.Add (rainGuage);
 			section.Add (update);
+			section.Add (showDetail);
+
 			Root.Add (section);
 
 

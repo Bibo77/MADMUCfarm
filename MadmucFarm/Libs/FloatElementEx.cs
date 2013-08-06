@@ -51,7 +51,7 @@ namespace MadmucFarm
 			Continuous = continuous;
 			_lockable = lockable;
 			_valueChangedCallback = valueChanged;
-			Caption = value.ToString ();
+			Caption = "  0  ";
 		}
 
 		protected override NSString CellKey { get { return skey; } }
