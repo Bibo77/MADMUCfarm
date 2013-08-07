@@ -37,6 +37,7 @@ namespace MadmucFarm
 			depth.ShowCaption = true; 
 			depth.MinValue = 0;
 			depth.MaxValue = 2; 
+
 			implement.ShouldReturn += delegate {
 				implement.ResignFirstResponder (true);
 				return true; 
@@ -103,7 +104,7 @@ namespace MadmucFarm
 			base.ViewDidLoad ();
 
 				
-			//grab from database
+			//grab from database if data exists
 			var q = from x in sql.Table<CultivationData> ()
 					where x.DbField == this.fieldID
 						select x;

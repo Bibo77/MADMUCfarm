@@ -101,12 +101,16 @@
     <Folder Include="table\" />
     <Folder Include="Libs\" />
     <Folder Include="LocalStorage\" />
+<<<<<<< HEAD
+    <Folder Include="BusinessObjects\" />
+=======
     <Folder Include="BuisnessObjects\" />
     <Folder Include="WebRequest\" />
+>>>>>>> e5fae0714db5dbac666ba1ff2c381874d3c908a3
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
-    <None Include="BuisnessObjects\.DS_Store" />
+    <None Include="BusinessObjects\.DS_Store" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Main.cs" />
@@ -131,16 +135,19 @@
     <Compile Include="LocalStorage\LocalStorage.cs" />
     <Compile Include="LocalStorage\DBConnection.cs" />
     <Compile Include="screens\Cultivation.cs" />
-    <Compile Include="BuisnessObjects\CultivationData.cs" />
-    <Compile Include="BuisnessObjects\HarvestData.cs" />
-    <Compile Include="BuisnessObjects\SoilTestData.cs" />
     <Compile Include="screens\SoilTest.cs" />
     <Compile Include="screens\Harvest.cs" />
+<<<<<<< HEAD
+    <Compile Include="BusinessObjects\CultivationData.cs" />
+    <Compile Include="BusinessObjects\HarvestData.cs" />
+    <Compile Include="BusinessObjects\SoilTestData.cs" />
+=======
     <Compile Include="table\RainGauge.cs" />
     <Compile Include="screens\RainDetail.cs" />
     <Compile Include="WebRequest\WebRequestManager.cs" />
     <Compile Include="table\SeedTemplate.cs" />
     <Compile Include="table\ChemicalTemplate.cs" />
+>>>>>>> e5fae0714db5dbac666ba1ff2c381874d3c908a3
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
