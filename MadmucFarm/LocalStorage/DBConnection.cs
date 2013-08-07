@@ -76,6 +76,11 @@ namespace MadmucFarm
 			}
 		}
 		//--------------------------------------------------------------------
+		public static void dropFieldTable(){
+			var db =initialDB();
+			db.Query<Field> ("DROP TABLE Field");
+		}
+
 		public static void updateNote(int fieldID,string note){
 			var db = initialDB ();
 			db.Query<Field> ("update Field set note ='"+note+"' where fieldID="+fieldID);
@@ -115,6 +120,17 @@ namespace MadmucFarm
 			//return result;
 		}
 		//------------------------------------------------------------------------------------------------
+		public static void dropFarmTable(){
+			var db =initialDB();
+			db.Query<Farm> ("DROP TABLE Farm");
+		}
+
+		public static int getFarmID(string farmName){
+			var db = initialDB ();
+			var result=db.Query<Farm> ("select farmID from Farm where farmName='"+farmName+"'");
+			return result [0].farmID;
+		}
+
 		public static int getRain(int farmID){
 			var db = initialDB ();
 			var result=db.Query<Farm> ("select rain from Farm where farmID="+farmID);
@@ -145,6 +161,11 @@ namespace MadmucFarm
 			//return result;
 		}
 		//-------------------------------------------------------------------------
+		public static void dropUserTable(){
+			var db =initialDB();
+			db.Query<User> ("DROP TABLE User");
+		}
+
 		public static void insertUser(String userName,String password){
 			var db =initialDB();
 			db.Query<User> ("insert into User (userName,password) Values ('" + userName + "','" + password + "');");
