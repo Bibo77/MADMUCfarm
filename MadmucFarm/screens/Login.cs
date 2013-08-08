@@ -32,10 +32,12 @@ namespace MadmucFarm
 
 				if(pass){
 					// download templates, before go to another screen
-
 					var webRequest = WebRequestManager.getWebRequestManager();
 					webRequest.downloadSeedTemplate();
 					webRequest.downloadChemicalTemplate();
+					webRequest.downloadUsers();
+					webRequest.downloadFarms();
+
 					//
 					var farm=new SelectFarm();
 					this.NavigationController.PushViewController(farm,true);

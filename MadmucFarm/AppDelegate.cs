@@ -29,8 +29,7 @@ namespace MadmucFarm
 
 				//hard code data
 
-				//insert user
-				DBConnection.insertUser ("", "");
+				/*
 				//insert farm Brown
 				DBConnection.insertFarm ("Brown");
 				DBConnection.insertField ("field#1", 40, 1,"Put note here");
@@ -154,7 +153,7 @@ namespace MadmucFarm
 				DBConnection.insertField ("D-3", 20, 7,"Put note here");
 				DBConnection.insertField ("D-4", 20, 7,"Put note here");
 
-
+				*/
 			}
 			// create a new window instance based on the screen size
 			window = new UIWindow (UIScreen.MainScreen.Bounds);

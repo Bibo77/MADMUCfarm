@@ -92,12 +92,6 @@
       <HintPath>..\Components\sqlite-net-1.0.1\lib\ios\SQLite.dll</HintPath>
     </Reference>
     <Reference Include="Mono.Data.Sqlite" />
-    <Reference Include="Newtonsoft.Json.MonoTouch">
-      <HintPath>..\..\..\Matics\Lib\Newtonsoft.Json-master\Newtonsoft.Json\bin\Release\Newtonsoft.Json.MonoTouch.dll</HintPath>
-    </Reference>
-    <Reference Include="Newtonsoft.Json.MonoTouch">
-      <HintPath>..\..\..\Matics\Lib\Newtonsoft.Json-master\Newtonsoft.Json\bin\Release\Newtonsoft.Json.MonoTouch.dll</HintPath>
-    </Reference>
     <Reference Include="System.Json" />
   </ItemGroup>
   <ItemGroup>

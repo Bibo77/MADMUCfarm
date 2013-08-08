@@ -25,6 +25,9 @@ namespace MadmucFarm
 				string farmName = farm.farmName;
 				int fieldNumber = DBConnection.getAllFields(farmID).Count ();
 				var farmImg=UIImage.FromFile ("img/"+farmName+".jpg");
+				if(farmImg==null)
+					farmImg=UIImage.FromFile ("Icon.png");
+
 				var theFarm=new BadgeElement(farmImg,farmName+"      "+fieldNumber+" fields",()=>{
 					Console.WriteLine("Farm Name is: "+farmName);
 					var field=new SelectField(farmName,farmID,fieldNumber);

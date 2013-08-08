@@ -92,8 +92,13 @@ namespace MadmucFarm
 
 
 			var section2 = new Section () { };
+			var farmImg=UIImage.FromFile ("img/"+farmName+".jpg");
+			if(farmImg==null)
+				farmImg=UIImage.FromFile ("Icon.png");
+			var imageView = new UIImageView (farmImg);
+			if(farmImg==null)
+				farmImg=UIImage.FromFile ("Icon.png");
 
-			var imageView = new UIImageView (UIImage.FromFile ("img/"+farmName+".jpg"));
 			var scrollView=new UIScrollView (
 				new RectangleF(0,0,fnc.View.Frame.Width-20,250)
 			);

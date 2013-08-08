@@ -79,6 +79,49 @@ namespace MadmucFarm
 			}
 
 		}
+
+		public void downloadUsers()
+		{
+			DBConnection.dropUserTable();
+			using(WebClient webClient = new WebClient())
+			{
+				var url = "http://madmucfarm1.appspot.com/getUser";
+				var data = webClient.DownloadString (url);
+				var users = JsonObject.Parse (data);
+				foreach (var user in users)
+				{
+					DBConnection.insertUser (((JsonValue)user)["userName"], ((JsonValue)user)["password"]);
+
+				}
+
+			}
+		}
+
+	
+		public void downloadFarms()
+		{
+			DBConnection.dropFarmTable();
+			DBConnection.dropFieldTable();
+			DBConnection.initialDB();
+			using(WebClient webClient = new WebClient())
+			{
+				var url = "http://madmuctut1.appspot.com/data";
+				var data = webClient.DownloadString (url);
+				var farms = JsonObject.Parse (data);
+				foreach (var farm in farms)
+				{
+					var farmName = ((JsonValue)farm) ["farmName"];
+					DBConnection.insertFarm (farmName);
+					var farmID=DBConnection.getFarmID (farmName);
+					foreach (var field in ((JsonValue)farm)["fields"]) {
+						DBConnection.insertField (((JsonValue)field)["fieldName"], 0,farmID,"Put note here");
+					}
+				}
+
+			}
+		}
+
+
 	}
 }
 
